@@ -1335,9 +1335,10 @@ body {
 * Globals overrides to change the layout of slides
 */
 .reveal ol, .reveal dl, .reveal ul {
+  padding: 0 0 0 1em;
   line-height: 1.5em;
   text-align: left;
-  margin: 0 0 0 0em; }
+  margin: 0; }
 
 .reveal ul {
   list-style-type: disc; }
@@ -1420,10 +1421,17 @@ body {
   .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*=transition]) h2 ~ h3,
   .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*=transition]) h1 ~ h3 {
     text-transform: initial;
-    margin-top: -90px;
     margin-bottom: 40px;
     color: #434343;
     font-size: 1em; }
+  .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) h1 + h2, .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) h2 + h3, .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) h1 + h3,
+  .reveal .slides section.sfeir-basic-slide:not(.stack):not([class*=transition]) h1 + h2,
+  .reveal .slides section.sfeir-basic-slide:not(.stack):not([class*=transition]) h2 + h3,
+  .reveal .slides section.sfeir-basic-slide:not(.stack):not([class*=transition]) h1 + h3,
+  .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*=transition]) h1 + h2,
+  .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*=transition]) h2 + h3,
+  .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*=transition]) h1 + h3 {
+    margin-top: -90px; }
   .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) table,
   .reveal .slides section.sfeir-basic-slide:not(.stack):not([class*=transition]) table,
   .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*=transition]) table {
